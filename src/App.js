@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+import MyApp  from './components/MyApp';
+import MyApp2 from './components/MyApp2';
+import Component1 from './propsTutorial/Component1';
+import Component2 from './propsTutorial/Component2';
+function App(){
+    return (
+        <div className="MyApp">
+            {/*<MyApp/>
+            <MyApp2/>*/}
+            <Component1 name="Nurlibay" age="17"/>
+            <Component2 text="React Tutorial"/>
+        </div>
+    );
 }
 
 export default App;
